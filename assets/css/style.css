@@ -2695,3 +2695,14 @@ ul {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
+
+video {
+    justify-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.video_reels {
+    display: flex;
+    justify-content: center;
+}
