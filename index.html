@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+    <link rel="stylesheet" href="assets/css/swap.css">
+    <link rel="stylesheet" href="assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media_query.css">
+</head>
+
+<body>
+    <!-- ====================================== Preloader ===================================== -->
+    <div class="wrapper">
+        <div id="loader-wrapper">
+            <div id="loader">
+                <svg viewBox="0 0 1320 300">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">Ema </text>
+                </svg>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+    <!-- ====================================== Preloader End ===================================== -->
+    <!-- ====================================== Background Animation ===================================== -->
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    <!-- ====================================== Background Animation End ===================================== -->
+    <!-- ====================================== Cursor ===================================== -->
+    <div class="cursor"></div>
+    <!-- ====================================== Cursor End ===================================== -->
+    <!-- ====================================== Dark Light Mode ===================================== -->
+    <div class="dark_toggle">
+        <div class="ul-header">
+            <a class="mode" onclick="myFunction()" title="Toggle Mode">
+                <div class="icon-container">
+                    <i id="sunIcon" class="fa-solid fa-sun fa-spin icon"></i>
+                    <i id="moonIcon" class="fa-solid fa-moon icon hidden"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- ====================================== Dark Light Mode End===================================== -->
+    <header>
+        <!-- ====================================== Fix Icon Menu ===================================== -->
+        <div class="sidebar close">
+            <ul class="nav-links icetab-container" id="icetab-container">
+                <li class="icetab current-tab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/home_icon.svg" alt="home_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class=""><a class="link_name" href="javascript:void(0)">Pradžia</a></li>
+                    </ul>
+                </li>
+                <li class="icetab menu-btn">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/about_icon.svg" alt="about_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Apie mane</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/services_icon.svg" alt="services_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Paslaugos</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/portfolio_icon.svg" alt="portfolio_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Portfolio</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/testimonial_icon.svg" alt="testimonial_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Atsiliepimai</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/blog_icon.svg" alt="blog_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Blogs</a></li>
+                    </ul>
+                </li> -->
+                <li class="icetab">
+                    <a class="" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/contact_icon.svg" alt="contact_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Kontaktai</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- ====================================== Fix Icon Menu End ===================================== -->
+        <!-- ======================================= Side Menu ================================== -->
+        <div class="toggle" onclick="openNav()">
+            <img class="line-menu" src="assets/images/line-menu.png" alt="line-menu">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="closebtn" onclick="closeNav()">&times;</div>
+            <img class="logo" src="assets/images/logo.png" alt="logo">
+            <ul class="sidescreen_sub icetab-container" id="icetab-container2">
+                <li class="icetab current-tab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/home_icon.svg" alt="home_icon">Pradžia
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/about_icon.svg"
+                            alt="about_icon">Apie mane
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/services_icon.svg"
+                            alt="services_icon.svg">Paslaugos
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/portfolio_icon.svg"
+                            alt="portfolio_icon">Portfolio
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/testimonial_icon.svg"
+                            alt="testimonial_icon">Atsiliepimai
+                    </a>
+                </li>
+                <!-- <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/blog_icon.svg"
+                            alt="blog_icon">Blogs
+                    </a>
+                </li> -->
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/contact_icon.svg"
+                            alt="contact_icon">Kontaktai
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- ======================================= Side Menu End ================================== -->
+    </header>
+    <div class="all_page" id="page">
+        <section class="card_section" id="card_main">
+            <div class="olivia_bio" id="oliva_details">
+                <div class="imgBox">
+                    <img class="olivia-img" src="assets/images/ema-portrait.jpeg" alt="olivia-img">
+                </div>
+                <div class="bio_contain">
+                    <h1 class="olivia_moswa">Ema Raugalaitė</h1>
+                    <h2 class="designer font_w_font_s1 overflow-hidden"></h2>
+                    <button class="download_cv hire_me font_w_font_s">
+                        <i class="ri-at-line"></i> Susisiekime
+                    </button>
+                </div>
+            </div>
+            <div class="right_card_main icetab-content" id="icetab-content">
+                <!-- ======================================= Home Section ================================== -->
+                <section class="oliva-intro tabcontent tab-active" id="home">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">intro</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Labas aš Ema, marketingo specialistė, turinio kūrėja, socialinių tinklų strategė.</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Dievinu estetiką, marketingą ir kūrybą. Kuriu turinį, kuris ne tik traukia akį, bet ir pasiekia rezultatų. Jei tavo prekės ženklui reikia šviežio oro gūsio socialiniuose tinkluose – pataikei ten, kur reikia!
+            
+                    </h3>
+                    <div class="button_circle_group">
+                        <div>
+                            <button class="download_cv font_w_font_s"
+                                onClick="window.open('assets/pdf/ema_resume.pdf');">
+                                <i class="ri-download-cloud-2-line"></i>MANO CV
+                            </button>
+                        </div>
+                        <div class="circular_text_main ">
+                            <a href="javascript:void(0)" class="down_arrow_main position-relative">
+                                <img class="circular_text" src="assets/images/circular_text.png" alt="circular_text">
+                                <img class="down_arrow" src="assets/images/down_arrow.svg" alt="down_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= About Section ================================== -->
+                <section class="oliva-intro tabcontent" id="about">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">Apie mane</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Kuriu istorijas per inovacijas ir estetiką</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Mano kelionė prasidėjo dar paauglystėje, kai išdrįsau ne tik kurti, bet ir kurti sau. Įkūriau savo verslą, mokiausi iš geriausių, klydau, augau, ir vis dar – su šypsena – lipu aukštyn. Dirbau su įvairiais prekių ženklais kaip socialinių tinklų administratorė, turinio kūrėja ir vizualinės estetikos strategė.
+                    </h3>
+                    <div class="about_counter fade_up">
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-start-year="2022">0+</h3>
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function () {
+                                  const counter = document.querySelector('.counter2');
+                                  const startYear = parseInt(counter.dataset.startYear, 10);
+                                  const currentYear = new Date().getFullYear();
+                                  const yearsPassed = currentYear - startYear + 1;
+                              
+                                  counter.textContent = `${yearsPassed}+`;
+                                });
+                              </script>
+                            <h3 class="experince font_w_font_s1 ">METAI PATIRTIES</h3>
+                        </div>
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-count="160">10+</h3>
+                            <h3 class="experince">PROJEKTŲ ĮGYVENDINTA LIETUVOJ</h3>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Services Section ================================== -->
+                <section class="oliva-intro tabcontent" id="services">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">Paslaugos</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Įgyvendinkime tavo viziją</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Tavo socialiniai tinklai neturi būti tik gražūs – jie turi būti nepamirštami. Aš pasirūpinsiu, kad jie įtrauktų, įtikintų ir veiktų.
+
+                    </h3>
+                    <div class="services_box_main">
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="assets/images/fa-share-nodes.svg" alt="ux">
+                            <h3 class="ui_ux font_w_font_s">Socialinių tinklų administravimas</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Pilnas Tavo Instagram ar TikTok paskyros valdymas: turinio strategija, planavimas, įrašų kūrimas, aprašymai, analizė ir nuolatinis augimo skatinimas.
+                        </div>
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="assets/images/fa-photo-film.svg" alt="android">
+                            <h3 class="ui_ux font_w_font_s">Turinio kūrimas</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Reels’ai ir TikTok’ai, sukurti pagal Tavo verslo modelį. 
+                                Man svarbu ne tiesiog sekti tendencijas ir kopijuoti, o kurti originalų, įtraukiantį turinį su aiškiu „kabliuku“. 
+                                Tikslas – pritraukti ne tik sekėjus, bet ir realius klientus.
+                                </h4>
+                        </div>
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="assets/images/fa-pen-nib.svg" alt="web">
+                            <h3 class="ui_ux font_w_font_s">Grafinis dizainas</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Kuriu vizualus, kurie sustiprina Tavo žinutę ir prekės ženklo identitetą. Dirbu su Adobe programomis, Photoshop ir Canva – todėl galiu pritaikyti tiek modernų minimalizmą, tiek žaismingesnį stilių. 
+                            </h4>
+                        </div>
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="assets/images/fa-searchengin.svg" alt="marketing">
+                            <h3 class="ui_ux font_w_font_s">Socialinių tinklų auditas</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Įvertinu Tavo paskyros turinį, dizainą, strategiją, aktyvumą ir pateikiu aiškias rekomendacijas, ką keisti, kad profilis augtų ir veiktų efektyviau.
+
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Portfolio Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="portfolio">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">portfolio</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Kūryba mane lydi nuo mažens.</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Nuo pirmojo savo verslo iki darbų su prekių ženklais – visada ieškojau, kaip derinti estetiką su rezultatu.
+                        Čia – mano atrinkti projektai, kuriuose susitinka strategija, kūryba ir meilė tam, ką darau.
+                    <div class="content_main">
+                        <div class="content_main1">
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up" data-target="overlay-mmavecandles">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/content_img.png" alt="content_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">mmavecandles</h3>
+                                        <p class="content-text">Verslas</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">mmavecandles</h4>
+                                <p class="project_name_sub font_w_font_s1">Verslas</p>
+                            </div>
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up" data-target="overlay-zeblender">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/content3_img.png" alt="content_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">ZeBlender</h3>
+                                        <p class="content-text">Turinio kūrimas</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">ZeBlender</h4>
+                                <p class="project_name_sub font_w_font_s1">Turinio kūrimas</p>
+                            </div>
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up" data-target="overlay-ismsa">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/content8_img.png" alt="content2_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">ISM SA</h3>
+                                        <p class="content-text">Kūrybinės marketingo paslaugos</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">ISM SA</h4>
+                                <p class="project_name_sub font_w_font_s1">Kūrybinės marketingo paslaugos</p>
+                            </div>
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up" data-target="overlay-spark">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/content7_img.png" alt="content_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">SPARK</h3>
+                                        <p class="content-text">Turinio kūrimas</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">SPARK</h4>
+                                <p class="project_name_sub font_w_font_s1">Turinio kūrimas</p>
+                            </div>
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up" data-target="overlay-msrekomendacijos">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/content9_img.png" alt="content_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">#MSREKOMENDACIJOS</h3>
+                                        <p class="content-text">Skaitmeninis žurnalas</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">MSREKOMENDACIJOS</h4>
+                                <p class="project_name_sub font_w_font_s1">Skaitmeninis žurnalas</p>
+                            </div>
+                        </div>
+                        <div class="content_main2">
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up" data-target="overlay-isloftas">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/content2_img.png" alt="content2_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">ISLOFTAS</h3>
+                                        <p class="content-text">Socialinių tinklų administravimas</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">ISLOFTAS</h4>
+                                <p class="project_name_sub font_w_font_s1">Socialinių tinklų administravimas</p>
+                            </div>
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up" data-target="overlay-kosmetologe">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/content6_img.png" alt="content2_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Kosmetologė</h3>
+                                        <p class="content-text">Socialinių tinklų administravimas</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Kosmetologė</h4>
+                                <p class="project_name_sub font_w_font_s1">Socialinių tinklų administravimas</p>
+                            </div>
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up" data-target="overlay-droneacademy">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/content4_img.png" alt="content2_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">DroneAcademy</h3>
+                                        <p class="content-text">Turinio kūrimas</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">DroneAcademy</h4>
+                                <p class="project_name_sub font_w_font_s1">Turinio kūrimas</p>
+                            </div>
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up" data-target="overlay-hopcover">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/content5_img.png" alt="content_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">HOPCOVER</h3>
+                                        <p class="content-text">Socialinių tinklų administravimas</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">HOPCOVER</h4>
+                                <p class="project_name_sub font_w_font_s1">Socialinių tinklų administravimas</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Portfolio Section End  ================================== -->
+                <!-- ======================================= Testimonials Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="testimonials">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">atsiliepimai</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Ką sako klientai? </h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Patikimiausias įrodymas – tai žmonės, su kuriais jau dirbau. Štai keletas jų minčių po bendradarbiavimo:
+                    </h3>
+                    <div class="testimonials_card">
+                        <div>
+                            <div class="slider_contain_main">
+                                <div class="img_text">
+                                    <img class="client_img" src="assets/images/atsiliepimai_1.jpg"
+                                        alt="testimonial_img">
+                                    <div>
+                                        <h4 class="client_name font_w_font_s">MAGDALENA SABALÈ</h4>
+                                        <p class="client_roll font_w_font_s1">Talent Agent</p>
+                                    </div>
+                                </div>
+                                <img class="collan" src="assets/images/collan.png" alt="collan">
+                            </div>
+                            <div class="rating_main">
+                                <img src="assets/images/rating.png" alt="rating">
+                            </div>
+                            <h3 class="placerat font_w_font_s1">Volutpat placerat pellentesque sed ut donec. Massa et
+                                quam pellentesque lorem at dolor dui a et. Nullam aliquet pharetra eu odio egestas nunc
+                                bibendum porttitor in. Nunc magna nunc nunc amet id sed sed platea elementum. Feugiat
+                                pharetra eleifend fringilla volutpat arcu. Dolor eget ut mi cursus faucibus risus
+                                tristique sit. Vitae pellentesque ac cras nisi tempus orci.
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="slider_contain_main">
+                                <div class="img_text">
+                                    <img class="client_img" src="assets/images/atsiliepimai_2.jpg"
+                                        alt="testimonial_img2">
+                                    <div>
+                                        <h4 class="client_name font_w_font_s">DRONE ACADEMY</h4>
+                                        <p class="client_roll font_w_font_s1">Company</p>
+                                    </div>
+                                </div>
+                                <img class="collan" src="assets/images/collan.png" alt="collan">
+                            </div>
+                            <div class="rating_main">
+                                <img src="assets/images/rating.png" alt="rating">
+                            </div>
+                            <h3 class="placerat font_w_font_s1">Dirbti su Ema buvo tikras malonumas. 
+                                Ji pati pasiūlė idėją, kuri iš karto patraukė dėmesį – turinys buvo originalus, 
+                                šiuolaikiškas ir labai gerai pritaikytas „TikTok“ auditorijai. 
+                                Rezultatai kalba patys už save. Viskas buvo atlikta atsakingai ir kūrybiškai. 
+                                Ema tikrai supranta, kaip sukurti turinį, kuris ne tik gražiai atrodo, bet ir veikia.
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="slider_contain_main">
+                                <div class="img_text">
+                                    <img class="client_img" src="assets/images/atsiliepimai_3.jpg"
+                                        alt="testimonial_img3">
+                                    <div>
+                                        <h4 class="client_name font_w_font_s">HOPCOVER</h4>
+                                        <p class="client_roll font_w_font_s1">Company</p>
+                                    </div>
+                                </div>
+                                <img class="collan" src="assets/images/collan.png" alt="collan">
+                            </div>
+                            <div class="rating_main">
+                                <img src="assets/images/rating.png" alt="rating">
+                            </div>
+                            <h3 class="placerat font_w_font_s1">Volutpat placerat pellentesque sed ut donec. Massa et
+                                quam pellentesque lorem at dolor dui a et. Nullam aliquet pharetra eu odio egestas nunc
+                                bibendum porttitor in. Nunc magna nunc nunc amet id sed sed platea elementum. Feugiat
+                                pharetra eleifend fringilla volutpat arcu. Dolor eget ut mi cursus faucibus risus
+                                tristique sit. Vitae pellentesque ac cras nisi tempus orci.
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="slider_contain_main">
+                                <div class="img_text">
+                                    <img class="client_img" src="assets/images/atsiliepimai_4.jpg"
+                                        alt="testimonial_img4">
+                                    <div>
+                                        <h4 class="client_name font_w_font_s">ISLOFTAS</h4>
+                                        <p class="client_roll font_w_font_s1">Company</p>
+                                    </div>
+                                </div>
+                                <img class="collan" src="assets/images/collan.png" alt="collan">
+                            </div>
+                            <div class="rating_main">
+                                <img src="assets/images/rating.png" alt="rating">
+                            </div>
+                            <h3 class="placerat font_w_font_s1">Volutpat placerat pellentesque sed ut donec. Massa et
+                                quam pellentesque lorem at dolor dui a et. Nullam aliquet pharetra eu odio egestas nunc
+                                bibendum porttitor in. Nunc magna nunc nunc amet id sed sed platea elementum. Feugiat
+                                pharetra eleifend fringilla volutpat arcu. Dolor eget ut mi cursus faucibus risus
+                                tristique sit. Vitae pellentesque ac cras nisi tempus orci.
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="slider_contain_main">
+                                <div class="img_text">
+                                    <img class="client_img" src="assets/images/atsiliepimai_5.jpg"
+                                        alt="testimonial_img4">
+                                    <div>
+                                        <h4 class="client_name font_w_font_s">KOSMETOLOGĖ ERNESTA</h4>
+                                        <p class="client_roll font_w_font_s1">Company</p>
+                                    </div>
+                                </div>
+                                <img class="collan" src="assets/images/collan.png" alt="collan">
+                            </div>
+                            <div class="rating_main">
+                                <img src="assets/images/rating.png" alt="rating">
+                            </div>
+                            <h3 class="placerat font_w_font_s1">Volutpat placerat pellentesque sed ut donec. Massa et
+                                quam pellentesque lorem at dolor dui a et. Nullam aliquet pharetra eu odio egestas nunc
+                                bibendum porttitor in. Nunc magna nunc nunc amet id sed sed platea elementum. Feugiat
+                                pharetra eleifend fringilla volutpat arcu. Dolor eget ut mi cursus faucibus risus
+                                tristique sit. Vitae pellentesque ac cras nisi tempus orci.
+                            </h3>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Testimonials Section End ================================== -->
+                <!-- ======================================= Blog Section  ================================== -->
+                <!-- <section class="oliva-intro tabcontent" id="blog">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">Blogs</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Recent Blogs And Articles</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Massa in ornare pharetra vitae et. Nunc lobortis
+                        cursus risus bibendum sed. Viverra tempus amet nibh id ipsum gravida mus.
+                    </h3>
+                    <div class="blog_section_main ">
+                        <div class="blog_img_top fade_up">
+                            <div class="blog_img trigger">
+                                <div class="blog_date">
+                                    <h4 class="date font_w_font_s">20 <span class="month">DEC</span></h4>
+                                </div>
+                            </div>
+                            <h3 class="become font_w_font_s">Become a Frontend Developer in 5 Simple Steps</h3>
+                            <p class="web_development font_w_font_s1">web development</p>
+                        </div>
+                        <div class="fade_up">
+                            <div class="blog_img blog_img2 trigger">
+                                <div class="blog_date">
+                                    <h4 class="date font_w_font_s">18 <span class="month">DEC</span></h4>
+                                </div>
+                            </div>
+                            <h3 class="become font_w_font_s">11 Best Logo Design Online & Offline Courses</h3>
+                            <p class="web_development font_w_font_s1">graphic design</p>
+                        </div>
+                        <div class="fade_up">
+                            <div class="blog_img blog_img3 trigger">
+                                <div class="blog_date">
+                                    <h4 class="date font_w_font_s">8 <span class="month">DEC</span></h4>
+                                </div>
+                            </div>
+                            <h3 class="become font_w_font_s">12 Best Branding Design Online and Offline Courses</h3>
+                            <p class="web_development font_w_font_s1">graphic design</p>
+                        </div>
+                        <div class="fade_up">
+                            <div class="blog_img blog_img4 trigger">
+                                <div class="blog_date">
+                                    <h4 class="date font_w_font_s">02 <span class="month">DEC</span></h4>
+                                </div>
+                            </div>
+                            <h3 class="become font_w_font_s">10 Content Proofreading Tips to Catch More Goofs</h3>
+                            <p class="web_development font_w_font_s1">seo</p>
+                        </div>
+                        <div class="fade_up">
+                            <div class="blog_img blog_img5 trigger">
+                                <div class="blog_date">
+                                    <h4 class="date font_w_font_s">28 <span class="month">NOV</span></h4>
+                                </div>
+                            </div>
+                            <h3 class="become font_w_font_s">Play to Strengths and Supercharge Your Business</h3>
+                            <p class="web_development font_w_font_s1">web development</p>
+                        </div>
+                        <div class="fade_up">
+                            <div class="blog_img blog_img6 trigger">
+                                <div class="blog_date">
+                                    <h4 class="date font_w_font_s">22 <span class="month">NOV</span></h4>
+                                </div>
+                            </div>
+                            <h3 class="become font_w_font_s">5 Steps to Create an Outstanding Marketing Plan</h3>
+                            <p class="web_development font_w_font_s1">digital marketing</p>
+                        </div>
+                    </div>
+                    <div id="text">
+                        <div class="view_more">
+                            <div class="fade_up">
+                                <div class="blog_img blog_img7 trigger">
+                                    <div class="blog_date">
+                                        <h4 class="date font_w_font_s">22 <span class="month">NOV</span></h4>
+                                    </div>
+                                </div>
+                                <h3 class="become font_w_font_s">5 Steps to Create an Outstanding Marketing Plan</h3>
+                                <p class="web_development font_w_font_s1">digital marketing</p>
+                            </div>
+                            <div class="fade_up">
+                                <div class="blog_img blog_img8 trigger">
+                                    <div class="blog_date">
+                                        <h4 class="date font_w_font_s">22 <span class="month">NOV</span></h4>
+                                    </div>
+                                </div>
+                                <h3 class="become font_w_font_s">5 Steps to Create an Outstanding Marketing Plan</h3>
+                                <p class="web_development font_w_font_s1">digital marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view_more_main fade_up">
+                        <button class="download_cv font_w_font_s" id="toggle">View More</button>
+                    </div>
+                </section> -->
+                <!-- ======================================= Blog Section End  ================================== -->
+                <!-- ======================================= Contact us Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="contact">
+                    <div class="intro_main">
+                        <h2 class="intro fade_up">Kontaktai</h2>
+                    </div>
+                    <div>
+                        <h3 class="moswa touch">Susisiekime!</h3>
+                        <div class="contact_number_main">
+                            <img src="assets/images/contact.svg" alt="contact">
+                            <h4 class="contact_number"><a href="tel:+37068244864">+370 682 44864</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="assets/images/gmail.svg" alt="gmail">
+                            <h4 class="contact_number"><a href="mailto:emavaicaityte@gmail.com">emavaicaityte@gmail.com</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="assets/images/linkedin.svg" alt="linkedin">
+                            <h4 class="contact_number"><a href="https://www.linkedin.com/in/ema-raugalait%C4%97-4016a9325/">LinkedIn</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="assets/images/facebook.svg" alt="facebook">
+                            <h4 class="contact_number"><a href="https://www.facebook.com/profile.php?id=100020623637824">Facebook</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="assets/images/instagram.svg" alt="instagram">
+                            <h4 class="contact_number"><a href="https://www.instagram.com/3mukavaii/">Instagram</a></h4>
+                        </div>
+                    </div>
+                    <h5 class="copyright">© Ema 2025. Visos teisės saugomos
+                    </h5>
+                </section>
+                <!-- ======================================= Contact us Section End ================================== -->
+            </div>
+        </section>
+        <!-- ======================================= Social Media Right Side  ================================== -->
+        <div class="social_media_main" id="social_media_main">
+            <ul class="social_media">
+                <li><a href="https://www.facebook.com/profile.php?id=100020623637824" target="blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/3mukavaii/" target="blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/ema-raugalait%C4%97-4016a9325/" target="blank">LinkedIn</a></li>
+
+            </ul>
+        </div>
+        <!-- ======================================= Social Media Right Side End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window --mmavecandles ================================== -->
+        <div class="overlay" id="overlay-mmavecandles">
+            <div class="content2">
+                <div id="close" class="close-button" data-target="overlay-mmavecandles">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="assets/images/portfolio_big_img.png" alt="portfolio_big_img">
+                    <div class="corporate_sub">
+                        <h3 class="project_name corp font_w_font_s">mmavecandles</h3>
+                        <p class="project_name_sub font_w_font_s1">Verslas</p>
+                    </div>
+                <p class="blandit_text font_w_font_s1">
+                    mmavecandles – pirmasis mano įkurtas smulkusis verslas, gimęs dar būnant penkiolikos.
+Viskas prasidėjo kaip hobis – gaminau žvakes namuose, o netrukus supratau, kad tai gali tapti daugiau nei tik laisvalaikio veikla. Kurdama šį prekės ženklą atradau savo aistrą estetikai, socialinių tinklų turiniui ir vizualinei komunikacijai. Būtent šio projekto dėka žengiau pirmuosius žingsnius marketingo srityje – mokiausi kurti įtraukiantį vizualinį turinį, formuoti prekės ženklo įvaizdį ir bendrauti su auditorija.
+
+Ši patirtis tapo stipriu pagrindu tolimesniam mano augimui kaip kūrėjos ir marketingo specialistės
+                </p>
+                <div class="project_second">
+                    <div class="gallery">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images1.png"
+                            alt="project_sub_images1">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images2.png"
+                        alt="project_sub_images2">
+                    </div>
+                </div>
+                <p class="blandit_text">Kurdama mmavecandles turinį, viską dariau pati – nuo idėjų iki įgyvendinimo. Fotografavau produktus, dėliojau vizualinę estetiką, redagavau nuotraukas ir montavau vaizdo įrašus, kurie buvo publikuojami „TikTok“ ir „Instagram“ platformose. Žinoma tuo pat metu bendravau su klientais, dalyvavau mugėse ir vykdžiau užsakymus.
+                </p>
+                <div class="pop-up-footer">
+                    <button class="download_cv view_project font_w_font_s"
+                        onClick="window.open('https://www.tiktok.com/@mmavecandles');">
+                        <i class="ri-eye-line"></i> Tiktok
+                    </button>
+                    <button class="download_cv view_project font_w_font_s"
+                        onClick="window.open('https://instagram.com/mmavecandles');">
+                        <i class="ri-eye-line"></i> Instagram
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window --zeblender ================================== -->
+        <div class="overlay" id="overlay-zeblender">
+            <div class="content2">
+                <div id="close-2" class="close-button" data-target="overlay-zeblender">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="assets/images/portfolio_big_img3.png" alt="portfolio_big_img">
+                    <div class="corporate_sub">
+                        <h3 class="project_name corp font_w_font_s">ZeBlender</h3>
+                        <p class="project_name_sub font_w_font_s1">Turinio kūrimas</p>
+                    </div>
+                <p class="blandit_text font_w_font_s1">
+                    Zeblender – projektas, kuriame turėjau visišką kūrybinę laisvę nuo idėjos iki jos įgyvendinimo. Savarankiškai sukūriau turinio koncepciją, paruošiau scenarijų, filmavau ir montavau vaizdo įrašus, skirtus „TikTok“ platformai.
+                </p>
+                <div class="project_second">
+                    <iframe height="300" width= "400" src="https://www.tiktok.com/player/v1/7165092996440984837?&music_info=1&description=1" allow="fullscreen" title="test"></iframe>
+<br />
+                </div>
+                <p class="blandit_text">Idėja pasižymėjo stipriu „hook’u“, todėl vaizdo įrašai greitai išplito ir surinko daugiau nei 100 000 peržiūrų. Šis projektas dar kartą įrodė, kaip svarbu suprasti auditorijos dėmesio mechanizmus ir kurti turinį, kuris ne tik patraukia žvilgsnį, bet ir išlaiko įsitraukimą.
+                </p>
+                <div class="pop-up-footer">
+                    <button class="download_cv view_project font_w_font_s"
+                        onClick="window.open('https://www.tiktok.com/@zeblenderis');">
+                        <i class="ri-eye-line"></i> Tiktok
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window --ISLOFTAS ================================== -->
+        <div class="overlay" id="overlay-isloftas">
+            <div class="content2">
+                <div id="close-3" class="close-button" data-target="overlay-isloftas">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="assets/images/portfolio_big_img2.png" alt="portfolio_big_img">
+                <div class="corporate_sub">
+                    <h3 class="project_name corp font_w_font_s">ISLOFTAS</h3>
+                    <p class="project_name_sub font_w_font_s1">Socialinių tinklų administravimas</p>
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    Įvaizdžio ir stiliaus loftas – tai vieta, kurioje turėjau galimybę gilinti savo patirtį socialinių tinklų turinio kūrime ir vizualinės komunikacijos srityje. Dirbdama čia kūriau estetiškai vientisą ir vizualiai patrauklų „Instagram“ paskyros feed’ą, dizainavau story vizualus bei rūpinausi paskyros administravimu.
+                </p>
+                <div class="project_second">
+                    <div class="gallery">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images3.png"
+                            alt="project_sub_images1">
+                    </div>
+                </div>
+                <p class="blandit_text">Šis projektas sustiprino mano gebėjimą suprasti prekės ženklo stilistiką, prisitaikyti prie jo vizualinės kalbos bei nuosekliai kurti estetiką, kuri kalba tiesiai į tikslinę auditoriją.
+                </p>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window --Kosmetologe ================================== -->
+        <div class="overlay" id="overlay-kosmetologe">
+            <div class="content2">
+                <div id="close-4" class="close-button" data-target="overlay-kosmetologe">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="assets/images/portfolio_big_img4.png" alt="portfolio_big_img">
+                <div class="corporate_sub">
+                    <h3 class="project_name corp font_w_font_s">Kosmetologė</h3>
+                    <p class="project_name_sub font_w_font_s1">Socialinių tinklų administravimas</p>
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    Kosmetologė Ernesta – projektas, kuriame rūpinausi tiek vizualinėmis, tiek strateginėmis pusėmis.
+
+Kūriau „Instagram“ story vizualus, tvarkiau paskyros estetiką ir užtikrinau, kad visas turinys atitiktų prekės ženklo stilių bei kalbėtų aiškiai tikslinei auditorijai. Taip pat administravau socialinius tinklus – nuo įrašų planavimo iki aktyvaus bendravimo su sekėjais.
+                </p>
+                <div class="project_second">
+                    <div class="gallery">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images4.png"
+                            alt="project_sub_images1">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images5.png"
+                        alt="project_sub_images2">
+                    </div>
+                </div>
+                <p class="blandit_text">Non vel eget pharetra vestibulum orci amet feugiat mi cras. Neque ac duis sed
+                    viverra volutpat. Natoque habitasse sit in interdum ut in pharetra proin amet. Non id egestas tellus
+                    enim nisi proin. Vel neque gravida sed nunc. Scelerisque vulputate sit tellus dui. Sollicitudin id
+                    nec amet porttitor id. In condimentum id id phasellus eu lobortis quis porta nisi.
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window --ismsa ================================== -->
+        <div class="overlay" id="overlay-ismsa">
+            <div class="content2">
+                <div id="close-5" class="close-button" data-target="overlay-ismsa">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="assets/images/portfolio_big_img.jpg" alt="portfolio_big_img">
+                <div class="corporate_sub">
+                    <h3 class="project_name corp font_w_font_s">ISM SA</h3>
+                    <p class="project_name_sub font_w_font_s1">Kūrybinės marketingo paslaugos</p>
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    Ornare sagittis blandit imperdiet cursus risus. Amet proin cras mattis arcu pellentesque lorem
+                    sagittis. Mauris facilisis id est duis eget sed cras curabitur faucibus. Lectus eu eu quis amet.
+                    Ultrices morbi bibendum risus nisi sapien id ut egestas. Et fermentum fermentum faucibus sed quis in
+                    eget. Quis cursus eu in sit cras sit elementum nibh sit.
+                </p>
+                <div class="project_second">
+                    <div class="gallery">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images1.png"
+                            alt="project_sub_images1">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images2.png"
+                        alt="project_sub_images2">
+                    </div>
+                </div>
+                <p class="blandit_text">Non vel eget pharetra vestibulum orci amet feugiat mi cras. Neque ac duis sed
+                    viverra volutpat. Natoque habitasse sit in interdum ut in pharetra proin amet. Non id egestas tellus
+                    enim nisi proin. Vel neque gravida sed nunc. Scelerisque vulputate sit tellus dui. Sollicitudin id
+                    nec amet porttitor id. In condimentum id id phasellus eu lobortis quis porta nisi.
+                </p>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window --droneacademy ================================== -->
+        <div class="overlay" id="overlay-droneacademy">
+            <div class="content2">
+                <div id="close-6" class="close-button" data-target="overlay-droneacademy">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="assets/images/portfolio_big_img.jpg" alt="portfolio_big_img">
+                <div class="corporate_sub">
+                    <h3 class="project_name corp font_w_font_s">DroneAcademy</h3>
+                    <p class="project_name_sub font_w_font_s1">Turinio kūrimas</p>
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    Ornare sagittis blandit imperdiet cursus risus. Amet proin cras mattis arcu pellentesque lorem
+                    sagittis. Mauris facilisis id est duis eget sed cras curabitur faucibus. Lectus eu eu quis amet.
+                    Ultrices morbi bibendum risus nisi sapien id ut egestas. Et fermentum fermentum faucibus sed quis in
+                    eget. Quis cursus eu in sit cras sit elementum nibh sit.
+                </p>
+                <div class="project_second">
+                    <div class="gallery">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images1.png"
+                            alt="project_sub_images1">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images2.png"
+                        alt="project_sub_images2">
+                    </div>
+                </div>
+                <p class="blandit_text">Non vel eget pharetra vestibulum orci amet feugiat mi cras. Neque ac duis sed
+                    viverra volutpat. Natoque habitasse sit in interdum ut in pharetra proin amet. Non id egestas tellus
+                    enim nisi proin. Vel neque gravida sed nunc. Scelerisque vulputate sit tellus dui. Sollicitudin id
+                    nec amet porttitor id. In condimentum id id phasellus eu lobortis quis porta nisi.
+                </p>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window --spark ================================== -->
+        <div class="overlay" id="overlay-spark">
+            <div class="content2">
+                <div id="close-7" class="close-button" data-target="overlay-spark">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="assets/images/portfolio_big_img.jpg" alt="portfolio_big_img">
+                <div class="corporate_sub">
+                    <h3 class="project_name corp font_w_font_s">SPARK</h3>
+                    <p class="project_name_sub font_w_font_s1">Turinio kūrimas</p>
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    Ornare sagittis blandit imperdiet cursus risus. Amet proin cras mattis arcu pellentesque lorem
+                    sagittis. Mauris facilisis id est duis eget sed cras curabitur faucibus. Lectus eu eu quis amet.
+                    Ultrices morbi bibendum risus nisi sapien id ut egestas. Et fermentum fermentum faucibus sed quis in
+                    eget. Quis cursus eu in sit cras sit elementum nibh sit.
+                </p>
+                <div class="project_second">
+                    <div class="gallery">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images1.png"
+                            alt="project_sub_images1">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images2.png"
+                        alt="project_sub_images2">
+                    </div>
+                </div>
+                <p class="blandit_text">Non vel eget pharetra vestibulum orci amet feugiat mi cras. Neque ac duis sed
+                    viverra volutpat. Natoque habitasse sit in interdum ut in pharetra proin amet. Non id egestas tellus
+                    enim nisi proin. Vel neque gravida sed nunc. Scelerisque vulputate sit tellus dui. Sollicitudin id
+                    nec amet porttitor id. In condimentum id id phasellus eu lobortis quis porta nisi.
+                </p>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window --hopcover ================================== -->
+        <div class="overlay" id="overlay-hopcover">
+            <div class="content2">
+                <div id="close-8" class="close-button" data-target="overlay-hopcover">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="assets/images/portfolio_big_img.jpg" alt="portfolio_big_img">
+                <div class="corporate_sub">
+                    <h3 class="project_name corp font_w_font_s">HOPCOVER</h3>
+                    <p class="project_name_sub font_w_font_s1">Socialinių tinklų administravimas</p>
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    Ornare sagittis blandit imperdiet cursus risus. Amet proin cras mattis arcu pellentesque lorem
+                    sagittis. Mauris facilisis id est duis eget sed cras curabitur faucibus. Lectus eu eu quis amet.
+                    Ultrices morbi bibendum risus nisi sapien id ut egestas. Et fermentum fermentum faucibus sed quis in
+                    eget. Quis cursus eu in sit cras sit elementum nibh sit.
+                </p>
+                <div class="project_second">
+                    <div class="gallery">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images1.png"
+                            alt="project_sub_images1">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images2.png"
+                        alt="project_sub_images2">
+                    </div>
+                </div>
+                <p class="blandit_text">Non vel eget pharetra vestibulum orci amet feugiat mi cras. Neque ac duis sed
+                    viverra volutpat. Natoque habitasse sit in interdum ut in pharetra proin amet. Non id egestas tellus
+                    enim nisi proin. Vel neque gravida sed nunc. Scelerisque vulputate sit tellus dui. Sollicitudin id
+                    nec amet porttitor id. In condimentum id id phasellus eu lobortis quis porta nisi.
+                </p>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+         <!-- ======================================= Portfolio PopUp Window --msrekomendacijos ================================== -->
+        <div class="overlay" id="overlay-msrekomendacijos">
+            <div class="content2">
+                <div id="close-9" class="close-button" data-target="overlay-msrekomendacijos">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="assets/images/portfolio_big_img.jpg" alt="portfolio_big_img">
+                <div class="corporate_sub">
+                    <h3 class="project_name corp font_w_font_s">#MSREKOMENDACIJOS</h3>
+                    <p class="project_name_sub font_w_font_s1">Skaitmeninis žurnalas</p>
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    Ornare sagittis blandit imperdiet cursus risus. Amet proin cras mattis arcu pellentesque lorem
+                    sagittis. Mauris facilisis id est duis eget sed cras curabitur faucibus. Lectus eu eu quis amet.
+                    Ultrices morbi bibendum risus nisi sapien id ut egestas. Et fermentum fermentum faucibus sed quis in
+                    eget. Quis cursus eu in sit cras sit elementum nibh sit.
+                </p>
+                <div class="project_second">
+                    <div class="gallery">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images1.png"
+                            alt="project_sub_images1">
+                        <img class="project_second_image_radius" src="assets/images/project_sub_images2.png"
+                        alt="project_sub_images2">
+                    </div>
+                </div>
+                <p class="blandit_text">Non vel eget pharetra vestibulum orci amet feugiat mi cras. Neque ac duis sed
+                    viverra volutpat. Natoque habitasse sit in interdum ut in pharetra proin amet. Non id egestas tellus
+                    enim nisi proin. Vel neque gravida sed nunc. Scelerisque vulputate sit tellus dui. Sollicitudin id
+                    nec amet porttitor id. In condimentum id id phasellus eu lobortis quis porta nisi.
+                </p>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+        <!-- ======================================= Blog PopUp Window  ================================== -->
+        <div class="modal-wrapper">
+            <div class="modal">
+                <div class="content3">
+                    <h3 class="logo_design">11 Best Logo Design Online & Offline Courses</h3>
+                    <h4 class="graphic font_w_font_s1">graphic design | December 18, 2023</h4>
+                    <div class="blog_pop_up_main">
+                        <img class="blog_pop_up " src="assets/images/blog_pop_up.png" alt="blog_pop_up">
+                    </div>
+                    <h4 class="nunc font_w_font_s1">
+                        Mi fames nunc donec diam mi arcu. Vitae justo consequat blandit proin tellus feugiat dignissim.
+                        Nibh fames cursus amet tempor pharetra. Sit nulla aliquam adipiscing auctor non id adipiscing
+                        dictum non. Augue id eleifend facilisi ac egestas dui quis. Sit a viverra tristique volutpat
+                        amet odio. Molestie blandit et donec convallis rhoncus.
+                    </h4>
+                    <h4 class="nunc font_w_font_s1">Non tincidunt pulvinar nunc enim pulvinar purus pellentesque est
+                        felis. Et quam rhoncus egestas in sed at pellentesque faucibus. Diam sollicitudin non et
+                        placerat odio sed nunc. Faucibus tempor nunc eu volutpat auctor cursus quis. Scelerisque nisi
+                        turpis in lorem magna ultrices.
+                    </h4>
+                    <div class="blog-pop-up-list-main">
+                        <ul class="blog-pop-up-list">
+                            <li>Mi fames nunc donec diam mi arcu. Vitae justo consequat blandit proin tellus
+                                feugiat dignissim.</li>
+                            <li>Nibh fames cursus amet tempor pharetra.</li>
+                            <li>Sit nulla aliquam adipiscing auctor non id adipiscing dictum non.</li>
+                            <li>Augue id eleifend facilisi ac egestas dui quis. Sit a viverra tristique
+                                volutpat amet odio.</li>
+                            <li>Molestie blandit et donec convallis rhoncus.</li>
+                            <li>Non tincidunt pulvinar nunc enim pulvinar purus pellentesque est felis.</li>
+                            <li>Et quam rhoncus egestas in sed at pellentesque faucibus. Diam sollicitudin
+                                non et placerat odio sed nunc.</li>
+                        </ul>
+                    </div>
+                    <div class="small_blog ">
+                        <h5 class="integer font_w_font_s1">Vel augue ullamcorper integer risus cras aliquet nisl.
+                            Consequat ipsum dui orci adipiscing egestas molestie non. Et tristique ipsum gravida pretium
+                            massa curabitur ac auctor adipiscing. Sit odio tellus hendrerit suspendisse non.
+                        </h5>
+                        <div class="line_client">
+                            <div class="line"></div>
+                            <h5 class="jordon font_w_font_s">By Jordon Smith</h5>
+                        </div>
+                    </div>
+                    <h5 class="viverra font_w_font_s">Viverra habitasse nunc praesent enim bibendum. Lectus ornare in
+                        facilisis.</h5>
+                    <h5 class="integer vel font_w_font_s1">
+                        Vel augue ullamcorper integer risus cras aliquet nisl. Consequat ipsum dui orci adipiscing
+                        egestas molestie non. Et tristique ipsum gravida pretium massa curabitur ac auctor adipiscing.
+                        Sit odio tellus hendrerit suspendisse non. Phasellus aenean tellus in nisl fusce orci tristique
+                        augue eget. Commodo lacus volutpat libero mauris pulvinar id pellentesque est. Habitant
+                        habitasse nunc commodo odio lectus ipsum.
+                    </h5>
+                    <div class="blog_pop_up_slider">
+                        <div class="blog_img_main">
+                            <img class="blog_slider_img" src="assets/images/blog_slider_img1.png"
+                                alt="blog_slider_img1">
+                        </div>
+                        <div class="blog_img_main">
+                            <img class="blog_slider_img" src="assets/images/blog_slider_img2.png"
+                                alt="blog_slider_img2">
+                        </div>
+                        <div class="blog_img_main">
+                            <img class="blog_slider_img" src="assets/images/blog_slider_img3.png"
+                                alt="blog_slider_img3">
+                        </div>
+                        <div class="blog_img_main">
+                            <img class="blog_slider_img" src="assets/images/blog_slider_img4.png"
+                                alt="blog_slider_img4">
+                        </div>
+                    </div>
+                    <h5 class="integer eget font_w_font_s1">
+                        Non vel eget pharetra vestibulum orci amet feugiat mi cras. Neque ac duis sed viverra volutpat.
+                        Natoque habitasse sit in interdum ut in pharetra proin amet. Non id egestas tellus enim nisi
+                        proin. Vel neque gravida sed nunc. Scelerisque vulputate sit tellus dui. Sollicitudin id nec
+                        amet porttitor id. In condimentum id id phasellus eu lobortis quis porta nisi.
+                    </h5>
+                    <div class="next_prev_share  position-relative">
+                        <div class="next_prev_arrow">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <h5 class="blog_next_prev font_w_font_s1">Prev</h5>
+                        </div>
+                        <div class="next_prev_arrow">
+                            <h5 class="blog_next_prev font_w_font_s1">Next</h5>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="page-wrapper trigger">
+                        <div class="circle-wrapper">
+                            <div class="warning circle_close"></div>
+                            <div class="close-btn font_w_font_s1">CLOSE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================= Portfolio gallery ================================== -->
+    <script src="assets/javascript/jquery.min.js"></script>
+    <script src="assets/javascript/magnific-popup.min.js"></script>
+    <script src="assets/javascript/progresscircle.js"></script>
+    <script src="assets/javascript/cursor.js"></script>
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="assets/javascript/slick.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
